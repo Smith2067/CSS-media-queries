@@ -1,0 +1,165 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(55, 55, 55);
+}
+
+/*Nav Bar -------------------- */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: rgb(117, 117, 117);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#hamburgerMenu{
+    display: none;
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+}
+
+#hamburgerMenu:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+#navButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.navButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid white 2px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    transition: .2s;
+}
+.navButton:hover{
+    background-color: rgb(99, 99, 99);
+}
+/*End Nav Bar ---------------- */
+
+/*Gallery Images ------------- */
+.littleDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainImage{
+    margin: 10px;
+    border-radius: 20px;
+}
+/*End Images ----------------- */
+
+
+
+/*Responsive Media Queries ------------------ */
+@media only screen and (max-width: 1010px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navButtonContainer{
+        display: none;
+        flex-direction: column;
+        padding-right: 0%;
+        align-items: flex-start;
+    }
+
+    #hamburgerMenu{
+        display: block;
+    }
+
+    #logo-hamburger-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #navButtonContainer{
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .littleDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .mainImage{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .mainImage{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 248px) {
+    #searchButton{
+        display: none;
+    }
+
+    #logo-hamburger-div{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    .mainImage{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 187px) {
+    .mainImage{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 167px) {
+    #logo{
+        height: 38px;
+        width: 75px;
+    }
+    
+    .mainImage{
+        margin: 0;
+    }
+}
+/*End Responsive Media Queries -------------- */
